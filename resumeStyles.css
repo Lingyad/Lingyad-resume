@@ -1,0 +1,177 @@
+html, body{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(16, 1, 20);
+}
+
+.self{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.middle{
+    width: 70%;
+    /* flex-grow: 1; */
+}
+
+.info{
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.img-container{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin: 30px 80px;
+    box-shadow: 2px 2px 5px white;
+}
+
+.gmail-container{
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 6px;
+}
+
+.link-container{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+.github-container{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin-top: 9px;
+    border-radius: 10px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header > p, h1, h2{
+color: rgb(214, 230, 244);
+}
+
+.info{
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.gmail-container:hover{
+   box-shadow: 4px 4px 5px white;
+}
+
+.link-container:hover{
+   box-shadow: 1px 3px 5px white;
+}
+
+.github-container:hover{
+   box-shadow: 1px 3px 5px white;
+}
+
+h1{
+    margin-bottom: 1px;
+}
+
+p{ 
+    line-height: 120%;
+}
+
+li{
+    margin-bottom: 5px;
+}
+main{
+    background-color: bisque;
+    margin:40px auto;
+    padding: 60px;
+    max-width: 70%;
+    border-radius: 20px;
+    box-shadow: 2px 1px 10px black;
+}
+
+main h1{
+    color: rgb(16, 1, 20);
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 0.6rem;
+}
+
+.other > a{
+ text-decoration: none;
+ color:  rgb(70, 22, 79);
+ font-weight: bolder;
+ text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+a:hover{
+    color: rgb(73, 64, 8);
+}
+
+@media screen and (width < 600px) {
+    
+    .head-container{
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .img-container{
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 5px;
+        flex-shrink: 0;
+        box-shadow: 2px 2px 5px white;
+        margin: auto;
+    }
+        
+    .self{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+     
+    .info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
